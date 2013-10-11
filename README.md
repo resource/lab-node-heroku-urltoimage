@@ -1,9 +1,7 @@
 lab-url2png-heroku
 ==================
 
-### Description
-
-Converting a URL to a PNG on Heroku with PhantomJS and ExpressJS
+Converting a URL to a PNG on Heroku with PhantomJS and ExpressJS is surprisingly easy. Just takes a little bit of finess with what are called build packs. YOu can read more about [build packs](https://devcenter.heroku.com/articles/buildpack-binaries) on [Heroku](http://heroku.com).
 
 ### Disclaimer
 
