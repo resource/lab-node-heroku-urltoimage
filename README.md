@@ -9,6 +9,8 @@ surprisingly easy. Just takes a little bit of finesse with
 
 ### Local
 
+Run this experiment locally
+
 ```sh
 [~] mkdir test && cd test
 [~/test] git clone https://github.com/resource/lab-node-heroku-urltoimage.git .
@@ -19,12 +21,22 @@ surprisingly easy. Just takes a little bit of finesse with
 
 ### Heroku
 
+Run this experiment on Heroku
+
 ```
 [~/test] heroku apps:create
 [~/test] heroku config:add BUILDPACK_URL=https://github.com/ddollar/heroku-buildpack-multi.git
 [~/test] heroku config:add PHANTOMJS_PATH=/app/vendor/phantomjs/bin/phantomjs
 [~/test] git push heroku master
 [~/test] source bin/open
+```
+
+### Bonus
+
+Run this experiment with a custom URI
+
+```
+[~/test] open http://localhost:5000/render?uri=http://www.github.com/resource/lab-node-heroku-urltoimage
 ```
 
 ### Disclaimer
