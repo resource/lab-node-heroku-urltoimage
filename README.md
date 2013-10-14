@@ -21,8 +21,9 @@ surprisingly easy. Just takes a little bit of finesse with
 ```
 [~] heroku apps:create
 [~] heroku config:add BUILDPACK_URL=https://github.com/ddollar/heroku-buildpack-multi.git
+[~] heroku config:add PHANTOMJS_PATH=/app/vendor/phantomjs/bin/phantomjs
 [~] git push heroku master
-[~] open http://`heroku config | grep === | sed 's/=== //' | sed 's/ Config Vars//'`.herokuapp.com/render
+[~] source bin/open
 ```
 
 ### Disclaimer
