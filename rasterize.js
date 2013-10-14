@@ -21,7 +21,7 @@ if (system.args.length < 3 || system.args.length > 5) {
                 var image = page.renderBase64(output);
                 console.log(JSON.stringify({image: image}));
                 phantom.exit();
-            }, 200);
+            }, 1000);
         }
     });
 
