@@ -10,20 +10,21 @@ surprisingly easy. Just takes a little bit of finesse with
 ### Local
 
 ```sh
-[~] git clone
-[~] npm install
-[~] foreman start
-[~] open http://localhost:5000/render
+[~] mkdir test && cd test
+[~/test] git clone https://github.com/resource/lab-node-heroku-urltoimage.git .
+[~/test] npm install
+[~/test] foreman start
+[~/test] open http://localhost:5000/render
 ```
 
 ### Heroku
 
 ```
-[~] heroku apps:create
-[~] heroku config:add BUILDPACK_URL=https://github.com/ddollar/heroku-buildpack-multi.git
-[~] heroku config:add PHANTOMJS_PATH=/app/vendor/phantomjs/bin/phantomjs
-[~] git push heroku master
-[~] source bin/open
+[~/test] heroku apps:create
+[~/test] heroku config:add BUILDPACK_URL=https://github.com/ddollar/heroku-buildpack-multi.git
+[~/test] heroku config:add PHANTOMJS_PATH=/app/vendor/phantomjs/bin/phantomjs
+[~/test] git push heroku master
+[~/test] source bin/open
 ```
 
 ### Disclaimer
