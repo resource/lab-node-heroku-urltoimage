@@ -1,7 +1,7 @@
 
-# lab-url2png-heroku
+# lab-node-heroku-urltoimage
 
-Converting a URL to a PNG on [Heroku](http://heroku.com) with
+Converting a URL to an image on [Heroku](http://heroku.com) with
 [PhantomJS](http://phantomjs.org/) and [ExpressJS](http://expressjs.com/) is
 surprisingly easy. Just takes a little bit of finesse with
 [Buildpacks](https://devcenter.heroku.com/articles/buildpack-binaries) on
